@@ -21,19 +21,19 @@ const Dashboard = () => {
     }
 
     const createResume = async (e) =>{
-        event.preventDefault()
+        e.preventDefault()
         setShowCreateResumes(false)
         navigate('/app/builder/123')
     }
 
     const uploadResume = async (e) => {
-        event.preventDefault()
+        e.preventDefault()
         setShowUploadResumes(false)
         navigate('/app/builder/123')
     }
 
     const editTitle = async (e) => {
-        event.preventDefault()
+        e.preventDefault()
     }
 
     const deleteResume = async (resumeId) => {
@@ -42,6 +42,7 @@ const Dashboard = () => {
             setAllResumes(prev => prev.filter(resume => resume._id !== resumeId))
     }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         loadAllResumes()
     }, [])

@@ -3,7 +3,6 @@ import React from 'react'
 import Title from './Title';
 
 const Features = () => {
-    const [isHover, setIsHover] = React.useState(false);
   return (
         <div id='features' className="flex flex-col items-center justify-center py-20">
 
